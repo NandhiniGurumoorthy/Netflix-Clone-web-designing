@@ -1,0 +1,44 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.0;
+    min-height: 100vh;
+    background: #ffffff;
+    top: 200px;
+    bottom: 200px;
+}
+.box {
+    background-color: #f1e7ba;
+    margin: 20%;
+    padding: 30px;
+    width: 500px;
+    text-align: center;
+}
+label {
+    display: block;
+    text-align: left;
+    color: #ffff;
+    font-weight: bold; 
+}
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    background-color: #e84420;
+    width: 100%;
+    font-size: 16px;
+}
+

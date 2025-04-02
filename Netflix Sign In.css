@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("Netflix\ sign\ in.jpeg") no-repeat fixed;
+    background-size:100% 100%; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.backside {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 700px; 
+}
+
+/* netflixIcon */
+
+.img-netflixIcon {
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+/* main box */
+
+.login-card {
+    position: absolute; /* Absolute positioning to allow overlap */
+    top: 75px; /* Adjust this value to control the overlap distance */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    padding: 10px 70px 145px 70px;
+    z-index: 1; /* Ensures the card appears above the footer */
+}
+
+/* Sign In */
+
+.login-card h1 {
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    font-weight:bold;
+    font-size: 2rem;
+}
+
+/* email & password */
+
+.userInput {
+    margin-bottom: 20px;
+}
+
+.userInput input {
+    width: 100%;
+    height: 55px;
+    background-color:  transparent;
+    border-radius: 5px;
+    border:1px solid gray;
+    text-indent: 15px;
+    /* transition: background-color 0.3s ease, border-color 0.3s ease; */
+    color: white;
+    background: rgba(35,34,34,0.5);
+}
+
+.userInput input:hover{
+    background-color: rgba(139, 139, 192, 0.2);
+}
+
+/* Sign In */
+
+.btn-login {
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+    background-color: rgb(211, 18, 18);
+    color: white;
+    border: none;
+    font-size:medium;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* or */
+
+p{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Forget password */
+
+.password {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.password a:hover{
+   color: rgb(197, 187, 187);
+    text-decoration: underline;
+}
+
+/* remember me */
+
+.remMe {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+.cText{
+    color: rgba(255, 255, 255, 0.966);
+    margin-bottom: 15px;
+}
+
+.custom-checkbox {
+    width: 20px; 
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    margin-right: 8px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Black tick mark for check tick */
+.checkbox-container input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: "";
+    position: absolute;
+    left: 6px; 
+    bottom: 3px;   
+    width: 6px;
+    height: 12px;
+    font-size: small;
+    border: solid black; /* Black tick */
+    border-width: 0 2px 2px 0; /* Create the tick shape */
+    transform: rotate(45deg);
+}
+
+/* New to Netflix? */
+
+.signup {
+    margin-bottom: 10px;
+    color: #8c8c8c;
+}
+
+.sLink {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 6px
+}
+
+.sLink:hover {
+    text-decoration: underline;
+    color:white;
+}
+
+/* google */
+
+.google {
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    padding-top:20px;
+}
+
+.google a {
+    text-decoration: none;
+}
+
+.google a:hover {
+    text-decoration: underline;
+}
+
+/* Questions?call */
+
+.tel-link {
+    color: rgb(204, 198, 198);
+    text-decoration: none;
+    margin-left: 15%;
+    position: relative;
+    top: 40px;
+    padding-top: 150px;
+}
+
+.tel-link a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(204, 198, 198);
+}
+
+.tel-link a:hover {
+    text-decoration: underline;
+    color: rgb(204, 198, 198);
+} 
+
+/* footer */
+
+.footer {
+    background-color: black;
+    color: #fff;
+}
+
+.footWidth {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+.footLay {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 0;
+}
+
+.footLay li {
+    list-style: none;
+}
+
+.footList {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.footLink {
+    font-size: small;
+    color: rgb(204, 198, 198);
+}
+
+.footLink:hover {
+    text-decoration: underline;
+    color: rgb(204, 198, 198);
+}
+
+.overlap {
+    position: absolute; /* Absolute positioning for overlap */
+    bottom: -400px; /* Adjust as needed for overlap distance */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center using transform */
+    width: 100%; /* Width of the overlap */
+}
+
+/* langugae */
+
+.language-select {
+    position: relative;
+    width: 118px; 
+    margin-left: 65%;
+    background: rgba(35,34,34,0.5);
+    right: 65%;
+}
+ 
+.language-select i {
+   color: white; /* Icon color */
+   position:absolute;
+   top:6px;
+   left: 6px;
+}
+
+.language-select select {
+    padding-right:10px; /* Space for the icon and text */
+    padding-left: 34px; /* Increase padding to move the arrow right */
+    height: 33px;
+    border-radius: 5px;
+    border: 1px solid #676b72;
+    padding-bottom: 3px;
+    font-size: medium;
+    color: white;
+    background: rgba(35,34,34,0.5);
+}
+    
+.language-select select option {
+    background-color: white;
+    color: black; 
+}
+
+.error-message {
+    display: none; /* Hidden by default */
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-message .fa-times-circle {
+    margin-right: 5px;
+    padding-top: 4px;
+}
+
+.userInput input.error-border {
+    border: 2px solid red; /* Red border when input is invalid */
+}
+@media (max-width: 600px) {
+    body {
+        background: url("Netflix\ sign\ in.jpeg") no-repeat fixed;
+        background-size: cover; 
+    }
+
+    .backside {
+        padding-bottom: 400px; /* Adjust based on design needs */
+    }
+
+    /* Adjust the login card */
+    .login-card {
+        width: 90%; /* Use a percentage for responsiveness */
+        padding: 10px 30px 70px 30px; /* Adjust padding */
+        top: 20px; /* Reduce top spacing */
+    }
+
+    /* Adjust heading */
+    .login-card h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        padding-top: 20px; /* Reduce padding */
+    }
+
+    /* Adjust input fields */
+    .userInput input {
+        height: 50px; /* Slightly shorter input */
+    }
+
+    /* Adjust button */
+    .btn-login {
+        padding: 8px; /* Smaller padding */
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    /* Adjust paragraph spacing */
+    p {
+        margin-top: 5px; /* Less margin for mobile */
+    }
+
+    /* Adjust footer layout */
+    .footLay {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px 0;
+    }
+
+    .footList {
+        width: 100%; /* Full width for lists */
+        margin-top: 10px; /* Space between items */
+    }
+
+    .tel-link {
+        margin-left: 5%; /* Less margin */
+        top: 20px; /* Adjust top positioning */
+        padding-top: 70px; /* Reduce padding */
+    }
+
+    /* Language select adjustments */
+    .language-select {
+        width: 80%; /* Full width */
+        margin: 20px auto; /* Center the dropdown */
+        right: 0; /* Reset right position */
+    }
+
+    .language-select select {
+        height: 40px; /* Smaller height for mobile */
+        padding-left: 10px; /* Less padding */
+    }
+}

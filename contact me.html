@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    /* style.css */
+  
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      background-color: #282828;
+  }
+  
+  .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  header {
+      background-color: #282828;
+      padding: 20px 0;
+  }
+  
+  .header-container {
+      padding: 10px 0;
+  }
+  
+  .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+  }
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav ul li {
+      margin-left: 20px;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1em;
+  }
+  
+  .button {
+      background-color: #f39c12;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+  
+  .hero {
+      background-color: #282828;
+      text-align: center;
+      padding: 88px 0;
+  }
+  
+  .hero-container {
+      padding: 10px 0;
+  }
+  
+  .section-title {
+      color: #f39c12;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+  }
+  
+  .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: bold;
+  }
+  /* style.css */
+
+  /* style.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Dark gray text */
+   
+}
+
+/* style.css */
+
+.description-section {
+    padding: 80px 0;
+    background-color: #fff; /* White background */
+    text-align: center; /* Center the button */
+}
+
+.description-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description-section .left-column {
+    width: 40%;
+    margin-top: 30px;
+    color: #333;
+}
+
+.description-section .right-column {
+    width: 55%;
+}
+
+.description-section h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.description-section p {
+    font-size: 1em;
+    color: #555;
+}
+
+.description-section .btn-rounded {
+    background-color: #f39c12; /* Orange button */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px; /* Rounded corners */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 40px; /* Space between text and button */
+}
+
+.description-section .btn-rounded:hover {
+    background-color: #e08e0b; /* Slightly darker orange on hover */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column {
+    width: 40%;
+}
+
+.right-column {
+    width: 55%;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+.description-section {
+    padding: 80px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column {
+    width: 40%;
+}
+
+.right-column {
+    width: 55%;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+.image-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.image-container {
+    max-width: 100%;
+    overflow: hidden; /* Ensure image fits within container */
+}
+
+.image-container img {
+    width: 100%;
+    display: block; /* Remove extra space below image */
+}
+
+
+/* style.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #e6d0d049;
+    background-color: #f9f9f9;
+}
+
+.values-section {
+    padding: 80px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+    color:white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.column {
+    width: 48%;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Contact Me Section Styles */
+#contactme {
+    background-color: lightgray; /* Light background for contrast */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contactme h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for heading */
+}
+
+#contactme p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+#contactme .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left; /* Align form elements to the left */
+}
+
+#contactme .form-group {
+    margin-bottom: 20px;
+}
+
+#contactme label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contactme input[type="text"],
+#contactme input[type="email"],
+#contactme textarea {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#contactme textarea {
+    height: 150px;
+}
+
+#contactme button[type="submit"] {
+    background-color: #f39c12; /* Orange button */
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactme button[type="submit"]:hover {
+    background-color: #e08e0b; /* Darker orange on hover */
+}
+
+/* style.css */
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+ 
+    color: #ccc; /* Light gray text */
+}
+
+.footer {
+    background-color: #555;
+    padding: 80px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+   
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.column-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d2b48c; /* Light brown title */
+    margin-bottom: 20px;
+
+}
+
+
+.column-text {
+    font-size: 1em;
+    line-height: 1.6;
+color: white;
+}
+
+.site-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+}
+
+.site-links li {
+    margin-bottom: 10px;
+
+
+}
+
+.site-links a {
+    color: #ccc;
+    text-decoration: none;
+}
+.social-icons {
+    display: flex; /* Arrange icons horizontally */
+    align-items: center; /* Vertically align icons */
+}
+
+.social-icons a {
+    color: #ccc; /* Light gray color */
+    margin-right: 50px; /* Space between icons */
+    font-size: 1.5em; /* Icon size */
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+
+}
+
+.social-icons a:hover {
+    color: #d2b48c; /* Light brown color on hover */
+}
+.newsletter-form {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    margin-left: -90px; 
+}
+.column-texts{
+    margin-left: -90px; 
+    color: white;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #ccc;
+}
+
+.subscribe-button {
+    background-color: #f39c12; /* Orange button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin-top: 30px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px; /* Add margin for spacing if wrapped */
+}
+
+#contact a {
+    color: #ccc;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+#contact h2 {
+    display: none;
+}
+
+.copyright {
+    margin-bottom: 10px; /* Add margin for spacing if wrapped */
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.back-to-top {
+    color: #ccc;
+    font-size: 1.5em;
+    position: relative;
+    margin-left: auto; /* Push to the right */
+    margin-bottom: 10px; /* Add margin for spacing if wrapped */
+}
+
+.back-to-top i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* style.css */
+</style>
+<body>
+    <a id="top"></a> <header>
+        <div class="container">
+            <div class="logo">Nandhini</div>
+            <nav>
+                <ul>
+                  <li><a href="#testimonials">What People Say</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#contactme">Contact Me</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  
+                  <!-- About and Work Links -->
+                  <li><a th:href="@{/about}" class="btn-link">About</a></li>
+                  <li><a th:href="@{/work}" class="btn-link">Work</a></li>
+                </ul>
+            </nav>
+            <a href="" class="button">Let's Work Together</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+       
+            <h1 th:text="${portfolio.userName}">Get In Touch</h1>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+<section id="contactme">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="/contact/submit" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+</section> 
+<a id="top"></a> <footer class="footer">
+    <div class="container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 class="column-title">About Nandhini</h3>
+                <p class="column-text"> Hi, I’m Nandhini – A Passionate Full-Stack Developer Ready to Build the Web of Tomorrow
+                  I’m a full-stack developer who loves creating great web applications. 
+                  I have experience working with React for the front-end, and Java with Spring Boot for the back-end. 
+                  I also use MySQL for managing databases, along with HTML, CSS, and JavaScript to build responsive and user-friendly websites. 
+                  My focus is on building efficient and scalable applications that offer smooth user experiences. 
+                  I’m excited to take on new projects and help bring ideas to life!</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="column-title">Site Links</h3>
+                <ul class="site-links">
+                  <li><a href="#testimonials">What People Say</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#contactme">Contact Me</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  
+                  <!-- About and Work Links -->
+                  <li><a th:href="@{/about}" class="btn-link">About</a></li>
+                  <li><a th:href="@{/work}" class="btn-link">Work</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="column-title">Newsletter</h3>
+                <p class="column-texts">Stay updated with my latest projects, blog posts, and insights into the world of web development and design. Subscribe to my newsletter for exclusive updates and content.</p>
+  
+               <!-- Form for Email Subscription -->
+  <form action="/subscribe" method="post">
+      <div class="newsletter-form">
+          <input type="email" name="email" placeholder="Your Email Address">
+          <button class="subscribe-button" type="submit">Subscribe</button>
+      </div>
+  </form>
+  
+  <!-- Display error message if the email is invalid -->
+  <div th:if="${param.error == 'invalidemail'}" style="color: red; font-weight: bold;">
+      <p>The email you entered is invalid. Please enter a valid email address.</p>
+  </div>
+  
+            </div>
+        </div>
+        <div class="footer-bottom">
+          <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <a th:href="${socialLinks.githubLink}" target="_blank">GitHub</a>
+    <a th:href="${socialLinks.linkedinLink}" target="_blank">LinkedIn</a>
+    <a th:href="${socialLinks.instagramLink}" target="_blank">Instagram</a>
+  </section>
+  
+            <div class="social-icons">
+              <a href="YOUR_GITHUB_URL" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="YOUR_LINKEDIN_URL" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+            <div class="copyright">
+                <p th:text="${currentYear}">&copy; 2025  Nandhini. All rights reserved.</p>
+               
+            </div>
+            <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </div>
+  </footer>
+  </body>
+  </html>

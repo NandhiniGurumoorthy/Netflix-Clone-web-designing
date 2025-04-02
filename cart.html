@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mt-1">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light " style="background-color:skyblue;">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Ekart</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="bootstrap.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html" >Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                          </li>
+
+                          <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                          </li> -->
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-danger" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+             </div>
+             </div>
+             <div class="row mt-3">
+                <div class="col-md-9">
+                    <h5 class="bg-danger text-white p-1">Customer detail</h5>
+                    <table class="table table-borderless">
+                    <td><b>Customer name</b></td>
+                    <td>sandhiya</td>
+                </tr>
+                <tr>
+                    <th>mobile no</th>
+                    <td>99229944</td>
+                    </tr>
+                <tr>
+                        <td><b>email</b></td>
+                        <td>anc@gmail.com</td>
+                    </tr>
+                </table>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="bg-danger text-white p-1">Cart total</h5>
+                    <table class="table table-borderless">
+                        <tr>
+                            <th>Total item</th>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                        <th>Total price</th>
+                        <td>99885</td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-danger">place order</button></td>
+                    </tr>
+                    </table>
+                    </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-9">
+                            <h5 class="bg-danger text-white p-1">Cart detail</h5>
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td rowspan="6"><img src="NETFLIX IMAGE 1.jpg" alt=""></td>
+                                </tr>
+                                <tr>
+                                <td><b>Product name</b></td>
+                                <td>Nothing</td>
+                            </tr>
+                            <tr>
+                                <td><b>Price</b></td>
+                                <td>19885</td>
+                            </tr>
+                            <td><b>Product Category</b></td>
+                            <td>Mobile</td>
+                            <tr>
+                                <td><b>Quantity</b></td>
+                                <td><button class="btn btn-danger">-</button>
+                                <input type="number" name="" id="">
+                                <button class="btn btn-success">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn-danger">Remove</button></td>
+                            </tr>
+                            </table>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                              <h5>Address</h5>
+                              <hr>
+                              <p>Ekart Pvt Ltd <br>
+                              Mail:ekart@gmail.com <br>
+                              call:+919898989898 <br>
+                              </p>
+                              </div>
+                              <div class="col-md-4">
+                              <h5>Quick Link</h5>
+                              <hr>
+                              <a href="#">Home</a><br>
+                              <a href="#">Contact</a><br>
+                              <a href="#">Cart</a><br>
+                              <a href="#">About</a>
+                              </div>
+                              <div class="col-md-4">
+                              <h5>Connect Us</h5>
+                              <hr>
+                              <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="color: black;">
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                              </svg></a>
+                          
+                              </body>
+                              </html>
+                    
+                
+                
+            

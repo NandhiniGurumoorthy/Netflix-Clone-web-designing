@@ -1,0 +1,265 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  background-color: rgb(27, 26, 26);
+}
+
+img {
+  max-width: 100%;
+}
+  
+.netflixLogo {
+  width: 150px;
+  padding-left: 5px;
+}
+
+.netflixLogo img {  
+  height: 30px;     
+}
+
+#logo {
+  margin: 10PX; 
+  position: relative;
+  bottom: 2PX; 
+}
+ 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+}
+
+.header .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header .buttons a {
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.header .buttons .join-now {
+  background-color: rgb(207, 10, 10);
+  font-weight: 500;
+  color: white;
+  padding: 7px 50px;
+  height:40px;
+}
+
+.header .buttons .sign-in {
+  background-color: transparent;
+  font-weight: 500;
+  color: white;
+  border-style:solid;
+  border-width: thin ;
+  border-color: white;
+  padding: 7px 30px;
+  height:40px;
+}
+
+.header .tagline {
+  color: white;
+  font-size: 14px;
+  position: relative;
+  margin-left: 50%;
+}
+
+.hero-text {
+  padding: 50px;
+  background-color: rgb(27, 26, 26);
+}
+
+.hero-text h1 {
+  font-size: xxx-large;
+  font-weight: 900;
+  color: white; 
+}
+
+.hero-text p {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: white; 
+}
+ 
+.main-container{
+  position: relative; 
+  top: -70px;
+  padding: 50px;
+  background-color: rgb(27, 26, 26);
+}
+
+.main-container h6{
+  color: white; 
+  font-size: x-large;
+}
+
+.hidden {
+  display: none;
+}
+
+.hoverable {
+  color: white;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+#more-text {
+  font-size: large;
+  color: white; 
+  font-weight: 100;
+  padding-left: 15px;
+} 
+
+#more-texts {
+  font-size: large;
+  color: white; 
+  font-weight: 100;
+  padding-left: 15px;
+} 
+
+.movie-slider {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.movie-container {
+  display: flex;
+  overflow-x: auto; /* horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  scrollbar-width: none;
+  cursor: pointer;
+  display: grid;
+  gap: 10px; 
+  max-width: 100%;
+  padding: 0 20px;
+  grid-template-columns: repeat(20, minmax(300px, 1fr));
+}
+
+.movie {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.movie p{
+  color: white;
+  text-align: center;
+}
+
+.movie img {
+  border-radius: 2px;
+  width: 500px; 
+  height: 80%;
+}
+
+.prev-btn, .next-btn {
+  background-color: rgb(27, 26, 26);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: red;
+  font-size: 50px;
+  font-weight: 400;
+  bottom:35px;
+  position: relative;
+}
+
+.blurred-image {
+  filter: blur(7px); /* Adjust the value to increase or decrease the blur */
+  transition: filter 0.3s; /* Smooth transition effect */
+}
+
+.blur-container {
+  display: flex;
+  cursor: pointer;
+  display: grid;
+  gap: 10px; 
+  grid-template-columns: repeat(20, minmax(300px, 1fr));
+}
+
+h2{
+  color: white;
+  text-align: center;
+  font-size: x-large;
+}
+
+h4{
+  color: white;
+  text-align: center;
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.button .join-now {
+  background-color: rgb(207, 10, 10);
+  font-weight: 500;
+  font-size: larger;
+  color: white;
+  padding: 12px 45px; 
+}
+
+.button {
+ margin-top: 45px;
+ margin-left: 42%;
+}
+
+.footer-text {
+  margin-top: 150px;
+}
+
+.footer-text p {
+  font-size: medium;
+  font-weight: 400;
+  color: rgb(138, 124, 124);
+}
+
+.footer-text  a {
+  text-decoration: none;
+}
+
+.footer-text .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+}
+
+.footer-text .col a {
+  display: block;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+.footer-text .col p{
+  font-size: small;
+  color: rgb(138, 124, 124);
+}
+
+.select-language {
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #757575;
+  padding: 14px 20px 14px 14px;
+  margin: 30px 0 40px 0;
+  font-size: medium;
+  min-height: 40px;
+  border: 1px solid #333;
+}
+
+.select-language option {
+  padding-left: 10px;
+}

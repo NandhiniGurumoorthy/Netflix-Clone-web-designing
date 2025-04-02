@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+     <link th:href="@{/CSS/styles.css}" rel="stylesheet" type="text/css">
+</head>
+
+<style>/* General Styles (Consistent with your previous page) */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        background-color: #333;
+        line-height: 1.8; /* Increased line-height for better readability */
+        text-align: center;
+        font-size: 18px; /* Increased base font size */
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Link back to Home */
+    .btn.btn-dark {
+        display: inline-block;
+        padding: 12px 25px; /* Increased padding */
+        background-color: #f39c12;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px; /* Slightly larger border radius */
+        margin: 25px; /* Increased margin */
+        font-size: 20px; /* Increased font size */
+    }
+    
+    .btn.btn-dark:hover {
+        background-color: #e08e0b;
+    }
+    
+    /* About Section Styles */
+    .about-section {
+        background-color: #444;
+        padding: 60px 0; /* Increased padding */
+        text-align: center;
+    }
+    
+    .about-header h2 {
+        font-size: 3em; /* Increased font size */
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    
+    .about-header p {
+        font-size: 2em; /* Increased font size */
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    
+    #about ul {
+        display: flex;
+        justify-content: center;
+        padding: 40px; /* Increased padding */
+        list-style-type: none;
+        border: 1px solid #555;
+    }
+    
+    #about ul li {
+        margin-right: 30px; /* Increased margin */
+    }
+    
+    #about ul li a {
+        color: #f39c12;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: color 0.3s;
+        font-size: 20px; /* Increased font size */
+    }
+    
+    #about ul li a:hover {
+        color: #e08e0b;
+    }
+    
+    /* Section Styles (Education, Experience, Courses, Skills, Certificates) */
+    section {
+        padding: 60px 30px; /* Increased padding */
+        margin: 30px 0; /* Increased margin */
+        background-color: #3a3a3a;
+        border-bottom: 1px solid #555;
+        text-align: center;
+        font-size: 20px; /* Increased font size */
+    }
+    
+    section h2 {
+        font-size: 2.5em; /* Increased font size */
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    
+    section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    section ul li {
+        margin-bottom: 20px; /* Increased margin */
+    }
+    
+    section ul li h3 {
+        font-size: 1.8em; /* Increased font size */
+        font-weight: bold;
+        color: #f39c12;
+        margin-bottom: 10px;
+    }
+    
+    section ul li h1{
+        font-size: 1.6em;
+        font-weight: bold;
+        color: #f39c12;
+        margin-bottom: 10px;
+    }
+    
+    section ul li p {
+        color: #ccc;
+        font-size: 18px; /* Increased font size */
+    }
+    
+    section ul li i {
+        font-style: italic;
+        color: #888;
+        font-size: 18px; /* Increased font size */
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        body {
+            font-size: 16px; /* Adjust base font size for smaller screens */
+        }
+    
+        .btn.btn-dark {
+            font-size: 18px; /* Adjust button font size */
+        }
+    
+        #about ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px; /* Adjust padding */
+        }
+    
+        #about ul li {
+            margin: 15px 0; /* Adjust margin */
+        }
+    
+        section {
+            padding: 40px 20px; /* Adjust padding */
+            margin: 20px 0; /* Adjust margin */
+        }
+    }
+
+</style>
+</head>
+<body>
+<!-- Link back to the Index page -->
+<a th:href="@{/portfolio}" class="btn btn-dark">Back to Home</a>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="about-header">
+        <h2>About Me</h2>
+        <p>Find out more about my journey, strengths, and professional growth.</p>
+    </div>
+    <ul class="about-links">
+        <li><a href="#education" class="about-link">Education</a></li>
+        <li><a href="#experience" class="about-link">Experience</a></li>
+        <li><a href="#courses" class="about-link">Courses</a></li>
+        <li><a href="#skills" class="about-link">Skills</a></li>
+        <li><a href="#certificates" class="about-link">Certificates</a></li>
+    </ul>
+</section>
+
+
+<!-- Education Section -->
+<section id="education">
+
+    <h2>Education</h2>
+    <ul>
+    <li><h3>Jeppiaar Engineering College</h3></li>
+    <li><p>B.Tech - Biotechnology</p></li>
+    <li><p><i>2016/08 - 2021/11 Chennai, India</i></p></li>
+    </ul>
+</section>
+
+<!-- Experience Section -->
+<section id="experience">
+    <h2>Experience</h2>
+    <ul>
+    <li><h3>E-Merge Tech Global Services (p) Ltd</h3></li>
+    <li><p>Research Associate | <i>2022/05 - 2022/09 Chennai, India</i></p></li>
+    <li><h1>Bio Curation and Literature Reviewer</h1></li>
+    
+        <li>Curated pharmacological data and validated sequences from research articles.</li>
+        <li>Reviewed and summarized relevant information for projects.</li>
+        <li>Organized data in Excel for easy tracking and analysis.</li>
+        <li>Worked with the team to identify research trends and improve projects.</li>
+    </ul>
+</section>
+
+<!-- Courses Section -->
+<section id="courses">
+    <h2>Courses</h2>
+    <ul>
+   <li><h1>Master in Java Full Stack Development Course at <i>IT Vedant, Chennai</i></h1></li>
+   </ul>
+   <p>I have successfully completed a Full Stack Java Development course at IT Vedant, a reputed training institute in Chennai. This course equipped you with a comprehensive understanding of full-stack development, covering both frontend technologies (for user interface design) and backend technologies (for server-side functionality).</p>
+   
+   <ul>
+   <li><h1>Key Areas of Learning in the Course</h1></li>
+   <li><h1>1. Frontend Development</h1></li>
+   </ul>
+   <h4>I learned how to create dynamic and visually appealing user interfaces, focusing on the following:</h4><br>
+
+<p><b>HTML</b>: Structuring web pages effectively with semantic elements.
+
+<b>CSS:</b> Styling and designing the layout for better user experience.
+
+<b>Bootstrap:</b> Developing responsive and mobile-first websites using pre-designed templates and grids.
+
+<b>JavaScript:</b> Adding interactivity to web pages, handling user events, and integrating APIs.
+
+<b>React:</b> Building modern, reusable, and dynamic components for creating scalable web applications.
+   </p>
+  <ul>
+  <li><h1>2. Backend Development</h1></li>
+  </ul>
+  <h4>I gained the skills to develop the core logic and server-side functionality of web applications, including:</h4><br>
+  <p><b>Java:</b> Writing robust and object-oriented code to manage data and business logic.
+
+<b>Spring Boot:</b> Building scalable, secure, and high-performance backend systems with minimal configuration.
+
+<b>RESTful APIs:</b> Creating APIs to enable communication between the frontend and backend. </p>
+   <ul>
+   <li><h1>3. Database Management</h1></li>
+   </ul>
+   <h4>I acquired the expertise to handle data effectively:</h4><br>
+   <p><b>MySQL:</b> Managing relational databases by writing queries to store, retrieve, update, and delete data.
+Creating and maintaining database relationships for real-world applications.
+   </p>
+   <ul>
+   
+   <li><h1>Practical Exposure</h1></li>
+   </ul>
+   <p>Worked on real-time projects to apply theoretical knowledge to practical scenarios.
+
+Learned to build end-to-end web applications, starting from designing the frontend to creating and deploying the backend.
+
+Improved your understanding of deployment and version control tools.
+   </p>
+  
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+  <ul> 
+        <li><h1>MySQL</h1></li>
+        </ul>
+        <h4>Description:</h4>
+        <p>A database management system used to store and manage data.</p>
+        <h4>Skills Learned:</h4>
+        <p>Writing SQL queries to fetch, insert, update, and delete data. Creating and managing databases, tables, and relationships. Optimizing database performance with indexing.</p>
+        
+        <ul>
+        <li><h1>HTML 5</h1></li>
+        </ul>
+        <h4>Description:</h4>
+        <p>The basic language for structuring web pages.</p>
+        <h4>Skills Learned:</h4>
+        <p>Structuring web pages using headings, paragraphs, tables, forms and many, using HTML5 features like multimedia tags.</p>
+      
+        <ul>
+        <li><h1>CSS 3</h1></li>
+        </ul>
+        <h4>Description:</h4>
+        <p>A style sheet language used for describing the presentation of a document written in HTML or XML.</p>
+        <h4>Skills Learned:</h4>
+        <p>Learnt how to style web pages, make them responsive for different devices, create layouts with flexbox and grid, and add animations, effects, and custom fonts.</p>
+        
+        <ul>
+         <li><h1>JavaScript</h1></li>
+         </ul>
+          <h4>Description:</h4>
+          <p>A programming language used to add interactivity to websites.</p>
+           <h4>Skills Learned:</h4>
+           <p>Creating dynamic content by manipulating the DOM. Handling events like clicks and form submissions. Fetching data from APIs.</p>
+           
+           <ul>
+           <li><h1>Bootstrap</h1></li>
+           </ul>
+           <h4>Description:</h4>
+           <p>A CSS framework for building responsive websites quickly.</p>
+           <h4>Skills Learned:</h4>
+           <p>Using pre-designed components like buttons and navigation bars. Creating responsive layouts with the grid system.</p>
+           
+           <ul>
+           <li><h1>React</h1></li>
+           </ul>
+             <h4>Description:</h4>
+             <p>A library for building modern user interfaces.</p>
+             <h4>Skills Learned:</h4>
+             <p>Creating reusable components. Managing state and handling data dynamically. Using React Router for navigation.</p>
+             
+             <ul>
+             <li><h1>Java Programming</h1></li>
+             </ul>
+             <h4>Description:</h4>
+             <p>A programming language used for backend development.</p>
+               <h4>Skills Learned:</h4>
+               <p>Writing clean and modular backend code. Processing data and handling exceptions. Working with Java collections and APIs.</p>
+               
+               <ul>
+               <li><h1> Spring Boot 3.0</h1></li>
+               </ul>
+               <h4>Description:</h4>
+               <p>A framework for building backend systems and APIs</p>
+               <h4>Skills Learned:</h4>
+               <p>Creating RESTful APIs. Managing databases with Spring Data JPA. Implementing security with Spring Security.</p>
+      
+   
+</section>
+
+ <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+    <li><p>SQL Certification from IT Vedant, Chennai | <i>July 2024</i></p></li>
+    <li><p>Advanced Web Design Certification from IT Vedant, Chennai | <i>Aug 2024</i></p></li>
+    <li><p>Core Web Design Certification from IT Vedant, Chennai | <i>Sep 2024</i></p></li>
+    </ul>
+</section>
+
+</body>
+</html>

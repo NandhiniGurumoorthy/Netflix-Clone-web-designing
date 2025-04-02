@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies | Netflix Official Site</title>
+    <link rel="stylesheet" href="Netflix Movies Page.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+    <body>
+    
+    <!-- Header Section -->
+
+        <div class="header">
+            <div class="netflixLogo">
+                <a id="logo" href="#home"><img src="logo.png" alt="Netflix" alt="Logo Image"></a>
+              </div> 
+           
+            <div class="tagline" id="header line">UNLIMITED TV SHOWS & MOVIES</div>
+            <div class="buttons">
+                <a href="Netflix Landing Page.html" class="join-now" id="join now">Join now</a>
+                <a href="Netflix Sign In.html" class="sign-in" id="sign in">Sign In</a>
+            </div>
+        </div>
+    <!-- end of header -->
+
+    <!-- hero-text -->
+    <div class="hero-text"> 
+        <h1 id="hero text">Movies</h1>
+        <p id="paragraph">Movies move us like nothing else can, whether they’re scary, funny, <br>
+            dramatic, romantic or anywhere in-between. So many titles, so much to <br>
+            experience.</p>
+    </div>
+<!-- End of hero-text -->
+            
+<!-- Movies -->
+
+<section class="main-container" > 
+    <section class="movie-row">
+        <h6><span class="hoverable" onmouseover="showYourNextwatch()" onmouseout="hideYourNextwatch()" id="header1">Your Next watch</span>
+            <span id="more-text" class="hidden">Explore more ></span></h6>
+      <div class="movie-slider">
+          <button class="prev-btn" onclick="slideLeft('Your Next Watch')">‹</button>
+          <div class="movie-container" name="Your Next Watch">
+              <div class="movie"><img src="movie.jpg" alt=""><p>Sector 36</p></div>
+              <div class="movie"><img src="movie2.jpg" alt=""><p>Ulajh</p></div>
+              <div class="movie"><img src="movie3.jpg" alt=""><p>Indian 2</p></div>
+              <div class="movie"><img src="movie4.jpg" alt=""><p>Adidos Amigo</p></div>
+              <div class="movie"><img src="movie5.jpg" alt=""><p>Kalki (Hindi)</p></div>
+              <div class="movie"><img src="movie6.jpg" alt=""><p>Laapatta Ladies</p></div>
+              <div class="movie"><img src="movie7.jpg" alt=""><p>Animal</p></div>
+              <div class="movie"><img src="movie8.jpg" alt=""><p>Fast X</p></div>
+              <div class="movie"><img src="movie9.jpg" alt=""><p>Maharaja</p></div>
+              <div class="movie"><img src="movie10.jpg" alt=""><p>Crew</p></div>
+              <div class="movie"><img src="movie11.jpg" alt=""><p>Bad Boys: Ride or Die</p></div>
+              <div class="movie"><img src="movie12.jpg" alt=""><p>Fighter</p></div>
+              <div class="movie"><img src="movie13.jpg" alt=""><p>Jawan: Extended Cut</p></div>
+              <div class="movie"><img src="movie14.jpg" alt=""><p>Mr. Bachchan</p></div>
+              <div class="movie"><img src="movie15.jpg" alt=""><p>Dunki</p></div>
+              <div class="movie"><img src="movie16.jpg" alt=""><p>Fast & Furious Presents: Hobbs & Shaw</p></div>
+              <div class="movie"><img src="movie17.jpg" alt=""><p>Leo (Hindi)</p></div>
+              <div class="movie"><img src="movie18.jpg" alt=""><p>Mad</p></div>
+              <div class="movie"><img src="movie19.jpg" alt=""><p>Mowgli: Legend of the Jungle</p></div>
+              <div class="movie"><img src="movie20.jpg" alt=""><p>Hi Papa (Hindi)</p></div>
+          </div>
+          <button class="next-btn" onclick="slideRight('Your Next Watch')">›</button>
+      </div>
+  </section>
+
+<section class="movie-row">
+   <h6  id="header2">Comedy Movies</h6>
+   <div class="movie-slider">
+       <button class="prev-btn" onclick="slideLeft('comedy-movies')">‹</button>
+       <div class="movie-container" name="comedy-movies">
+            <div class="movie"><img src="movie21.jpg" alt=""><p>The Garfifeld Movie</p></div>
+            <div class="movie"><img src="movie22.jpg" alt=""><p>The Super Mario Bros. Movie</p></div>
+            <div class="movie"><img src="movie23.jpg" alt=""><p>Dream Girl 2</p></div>
+            <div class="movie"><img src="movie24.jpg" alt=""><p>The Angry Birds Movie 2</p></div>
+            <div class="movie"><img src="movie25.jpg" alt=""><p>Wild Wild Punjab</p></div>
+            <div class="movie"><img src="movie26.jpg" alt=""><p>Chandramukhi 2(Hindi)</p></div>
+            <div class="movie"><img src="movie27.jpg" alt=""><p>Sukhee</p></div>
+            <div class="movie"><img src="movie28.jpg" alt=""><p>Crazy Rich Asians</p></div>
+            <div class="movie"><img src="movie29.jpg" alt=""><p>Don</p></div>
+            <div class="movie"><img src="movie30.jpg" alt=""><p>The Monkey Kind</p></div>
+            <div class="movie"><img src="movie31.jpg" alt=""><p>How to Lose a Guy In 10 Days</p></div>
+            <div class="movie"><img src="movie32.jpg" alt=""><p>Badhaai Do</p></div>
+            <div class="movie"><img src="movie33.jpg" alt=""><p>Laal Singh Chaddha</p></div>
+            <div class="movie"><img src="movie34.jpg" alt=""><p>Minnal Murali</p></div>
+            <div class="movie"><img src="movie35.jpg" alt=""><p>Doctor G</p></div>
+            <div class="movie"><img src="movie36.jpg" alt=""><p>Pk</p></div>
+            <div class="movie"><img src="movie37.jpg" alt=""><p>Sing</p></div>
+            <div class="movie"><img src="movie38.jpg" alt=""><p>Shazam!</p></div>
+            <div class="movie"><img src="movie39.jpg" alt=""><p>Bhool Bhulaiyaa 2</p></div>
+            <div class="movie"><img src="movie40.jpg" alt=""><p>Leo</p></div>
+       </div>
+       <button class="next-btn" onclick="slideRight('comedy-movies')">›</button>
+   </div>
+</section>
+
+<section class="movie-row">
+   <h6  id="header3">Suspenseful Movies</h6>
+   <div class="movie-slider">
+       <button class="prev-btn" onclick="slideLeft('Suspenseful Movies')">‹</button>
+       <div class="movie-container" name="Suspenseful Movies">
+         <div class="movie"><img src="movie41.jpg" alt=""><p>Khufiya</p></div>
+         <div class="movie"><img src="movie42.jpg" alt=""><p>Phir Aayi Hasseen Dillruba</p></div>
+         <div class="movie"><img src="movie43.jpg" alt=""><p>The Meg</p></div>
+         <div class="movie"><img src="movie44.jpg" alt=""><p>Under Paris</p></div>
+         <div class="movie"><img src="movie45.jpg" alt=""><p>Nowhere</p></div>
+         <div class="movie"><img src="movie46.jpg" alt=""><p>Spider-Man: No Way Home</p></div>
+         <div class="movie"><img src="movie47.jpg" alt=""><p>Mission Majnu</p></div>
+         <div class="movie"><img src="movie48.jpg" alt=""><p>HIT: The First Case</p></div>
+         <div class="movie"><img src="movie49.jpg" alt=""><p>Gumraah</p></div>
+         <div class="movie"><img src="movie50.jpg" alt=""><p>Sajini Shinde Ka Viral Video</p></div>
+         <div class="movie"><img src="movie51.jpg" alt=""><p>Damsel</p></div>
+         <div class="movie"><img src="movie52.jpg" alt=""><p>Leave the World Behind</p></div>
+         <div class="movie"><img src="movie53.jpg" alt=""><p>Rebel Ridge</p></div>
+         <div class="movie"><img src="movie54.jpg" alt=""><p>The Wages of Fear</p></div>
+         <div class="movie"><img src="movie55.jpg" alt=""><p>The Equalizer 3</p></div>
+         <div class="movie"><img src="movie56.jpg" alt=""><p>Jaane Jaan</p></div>
+         <div class="movie"><img src="movie57.jpg" alt=""><p>Anacondas: The Hunt for the Blood Orchid</p></div>
+         <div class="movie"><img src="movie58.jpg" alt=""><p>Officer Black Belt</p></div>
+         <div class="movie"><img src="movie59.jpg" alt=""><p>Don't Breathe 2</p></div>
+         <div class="movie"><img src="movie60.jpg" alt=""><p>Kannai Nambathey</p></div>
+       </div>
+       <button class="next-btn" onclick="slideRight('Suspenseful Movies')">›</button>
+   </div>
+</section>
+
+<section class="movie-row">
+   <h6  id="header4">Movies Based on Real Life</h6>
+   <div class="movie-slider">
+       <button class="prev-btn" onclick="slideLeft('Movies Based on Real Life')">‹</button>
+       <div class="movie-container" name="Movies Based on Real Life">
+            <div class="movie"><img src="movie61.jpg" alt=""><p>Srikankth</p></div>
+            <div class="movie"><img src="movie62.jpg" alt=""><p>Maharaj</p></div>
+            <div class="movie"><img src="movie63.jpg" alt=""><p>Amar Singh Chamkila</p></div>
+            <div class="movie"><img src="movie64.jpg" alt=""><p>Society of the Snow</p></div>
+            <div class="movie"><img src="movie65.jpg" alt=""><p>A Dog's Way Home</p></div>
+            <div class="movie"><img src="movie66.jpg" alt=""><p>Shabaash Mithu</p></div>
+            <div class="movie"><img src="movie67.jpg" alt=""><p>Kuttavum Shikshayum</p></div>
+            <div class="movie"><img src="movie68.jpg" alt=""><p>Gran Turismo: Based on a True Story</p></div>
+            <div class="movie"><img src="movie69.jpg" alt=""><p>Steve Jobs</p></div>
+            <div class="movie"><img src="movie70.jpg" alt=""><p>'83</p></div>
+            <div class="movie"><img src="movie71.jpg" alt=""><p>Panipat</p></div>
+            <div class="movie"><img src="movie72.jpg" alt=""><p>Munich</p></div>
+            <div class="movie"><img src="movie73.jpg" alt=""><p>Ani... Dr. Kashinath Ghanekar</p></div>
+            <div class="movie"><img src="movie74.jpg" alt=""><p>Sand Castel</p></div>
+            <div class="movie"><img src="movie75.jpg" alt=""><p>Narvik</p></div>
+            <div class="movie"><img src="movie76.jpg" alt=""><p>The High Way Men</p></div>
+            <div class="movie"><img src="movie77.jpg" alt=""><p>American Gangster</p></div>
+            <div class="movie"><img src="movie78.jpg" alt=""><p>Sanju</p></div>
+            <div class="movie"><img src="movie79.jpg" alt=""><p>Bohemian Rhapsody</p></div>
+            <div class="movie"><img src="movie80.jpg" alt=""><p>The Boy Who Harnessed The Wind</p></div>
+            </div>
+         <button class="next-btn" onclick="slideRight('Movies Based on Real Life')">›</button>
+      </div>
+   </section>
+
+
+   <section class="movie-row">
+    <h6  id="header5">Horror Movies</h6>
+    <div class="movie-slider">
+        <button class="prev-btn" onclick="slideLeft('Horror Movies')">‹</button>
+        <div class="movie-container" name="Horror Movies">
+             <div class="movie"><img src="movie81.jpg" alt=""><p>Tarot</p></div>
+             <div class="movie"><img src="movie82.jpg" alt=""><p>M3GAN</p></div>
+             <div class="movie"><img src="movie83.jpg" alt=""><p>The Deliverance</p></div>
+             <div class="movie"><img src="movie84.jpg" alt=""><p>Thanksgiving</p></div>
+             <div class="movie"><img src="movie85.jpg" alt=""><p>Smile</p></div>
+             <div class="movie"><img src="movie86.jpg" alt=""><p>Do You See What I See</p></div>
+             <div class="movie"><img src="movie87.jpg" alt=""><p>Virupaksha</p></div>
+             <div class="movie"><img src="movie88.jpg" alt=""><p>Ouija: Origin of Evil</p></div>
+             <div class="movie"><img src="movie89.jpg" alt=""><p>Death Whisperer</p></div>
+             <div class="movie"><img src="movie90.jpg" alt=""><p>Annabelle Comes Home</p></div>
+             <div class="movie"><img src="movie91.jpg" alt=""><p>Final Destination 3</p></div>
+             <div class="movie"><img src="movie92.jpg" alt=""><p>The Corpse Washer</p></div>
+             <div class="movie"><img src="movie93.jpg" alt=""><p>The Curse of La Llorona</p></div>
+             <div class="movie"><img src="movie94.jpg" alt=""><p>Insidious: The Red Door</p></div>
+             <div class="movie"><img src="movie95.jpg" alt=""><p>The Grudge</p></div>
+             <div class="movie"><img src="movie96.jpg" alt=""><p>Get Out</p></div>
+             <div class="movie"><img src="movie97.jpg" alt=""><p>The Conjuring 2</p></div>
+             <div class="movie"><img src="movie98.jpg" alt=""><p>Bird Box</p></div>
+             <div class="movie"><img src="movie99.jpg" alt=""><p>Resident Evil: The Final Chapter</p></div>
+             <div class="movie"><img src="movie100.jpg" alt=""><p>Run</p></div>
+            </div>
+            <button class="next-btn" onclick="slideRight('Horror Movies')">›</button>
+         </div>
+      </section>
+
+      <section class="movie-row">
+        <h6  id="header6">Futuristic Sci-Fi</h6>
+        <div class="movie-slider">
+            <button class="prev-btn" onclick="slideLeft('Futuristic Sci-Fi')">‹</button>
+            <div class="movie-container" name="Futuristic Sci-Fi">
+                 <div class="movie"><img src="movie101.jpg" alt=""><p>Uglies</p></div>
+                 <div class="movie"><img src="movie102.jpg" alt=""><p>Oblivion</p></div>
+                 <div class="movie"><img src="movie103.jpg" alt=""><p>Geostorm</p></div>
+                 <div class="movie"><img src="movie104.jpg" alt=""><p>Atlas</p></div>
+                 <div class="movie"><img src="movie105.jpg" alt=""><p>Ready Player One</p></div>
+                 <div class="movie"><img src="movie106.jpg" alt=""><p>Edge of Tomorrow</p></div>
+                 <div class="movie"><img src="movie107.jpg" alt=""><p>Interstellar</p></div>
+                 <div class="movie"><img src="movie108.jpg" alt=""><p>Total Recall</p></div>
+                 <div class="movie"><img src="movie109.jpg" alt=""><p>Outside the Wire</p></div>
+                 <div class="movie"><img src="movie200.jpg" alt=""><p>The Matrix</p></div>
+                 <div class="movie"><img src="movie201.jpg" alt=""><p>Dune</p></div>
+                 <div class="movie"><img src="movie202.jpg" alt=""><p>Paradise</p></div>
+                 <div class="movie"><img src="movie203.jpg" alt=""><p>Pacific Rim: Uprising</p></div>
+                 <div class="movie"><img src="movie204.jpg" alt=""><p>Mad Max: Fury Road</p></div>
+                 <div class="movie"><img src="movie205.jpg" alt=""><p>Spaceman</p></div>
+                 <div class="movie"><img src="movie206.jpg" alt=""><p>I Am Mother</p></div>
+                 <div class="movie"><img src="movie207.jpg" alt=""><p>In the Shadow of the Moon</p></div>
+                 <div class="movie"><img src="movie208.jpg" alt=""><p>Stowaway</p></div>
+                 <div class="movie"><img src="movie209.jpg" alt=""><p>Mute</p></div>
+                 <div class="movie"><img src="movie300.jpg" alt=""><p>The Midnight Sky</p></div>
+                </div>
+                <button class="next-btn" onclick="slideRight('Futuristic Sci-Fi')">›</button>
+             </div>
+          </section>
+
+          <section class="movie-row">
+            <h6  id="header7">Tamil-Language Movies</h6>
+            <div class="movie-slider">
+                <button class="prev-btn" onclick="slideLeft('Tamil-Language Movies')">‹</button>
+                <div class="movie-container" name="Tamil-Language Movies">
+                     <div class="movie"><img src="movie301.jpg" alt=""><p>Dear</p></div>
+                     <div class="movie"><img src="movie302.jpg" alt=""><p>Leo (Tamil)</p></div>
+                     <div class="movie"><img src="movie303.jpg" alt=""><p>Irugapatru</p></div>
+                     <div class="movie"><img src="movie304.jpg" alt=""><p>Jigar Thanda</p></div>
+                     <div class="movie"><img src="movie305.jpg" alt=""><p>Iraivan</p></div>
+                     <div class="movie"><img src="movie306.jpg" alt=""><p>Doctor (Tamil)</p></div>
+                     <div class="movie"><img src="movie307.jpg" alt=""><p>Maamannan</p></div>
+                     <div class="movie"><img src="movie308.jpg" alt=""><p>Merry Christmas (Tamil)</p></div>
+                     <div class="movie"><img src="movie309.jpg" alt=""><p>Thunivu</p></div>
+                     <div class="movie"><img src="movie310.jpg" alt=""><p>Beast</p></div>
+                     <div class="movie"><img src="movie311.jpg" alt=""><p>Theera Kaadhal</p></div>
+                     <div class="movie"><img src="movie312.jpg" alt=""><p>Gatta Kusthi</p></div>
+                     <div class="movie"><img src="movie313.jpg" alt=""><p>Raangi</p></div>
+                     <div class="movie"><img src="movie314.jpg" alt=""><p>Kalaga Thalaivan</p></div>
+                     <div class="movie"><img src="movie315.jpg" alt=""><p>Jagame Thandhiram</p></div>
+                     <div class="movie"><img src="movie316.jpg" alt=""><p>Japan</p></div>
+                     <div class="movie"><img src="movie317.jpg" alt=""><p>Nitham Oru Vaanam</p></div>
+                     <div class="movie"><img src="movie318.jpg" alt=""><p>Thiruvin Kural</p></div>
+                     <div class="movie"><img src="movie319.jpg" alt=""><p>Love Today</p></div>
+                     <div class="movie"><img src="movie320.jpg" alt=""><p>Takkar</p></div>
+                    </div>
+                    <button class="next-btn" onclick="slideRight('Tamil-Language Movies')">›</button>
+                 </div>
+              </section>
+
+              <section class="movie-row">
+                <h6  id="header8">Exciting Movies</h6>
+                <div class="movie-slider">
+                    <button class="prev-btn" onclick="slideLeft('Exciting Movies')">‹</button>
+                    <div class="movie-container" name="Exciting Movies">
+                         <div class="movie"><img src="movie321.jpg" alt=""><p>Ready Player One</p></div>
+                         <div class="movie"><img src="movie322.jpg" alt=""><p>Gumraah</p></div>
+                         <div class="movie"><img src="movie323.jpg" alt=""><p>Suicide Squad</p></div>
+                         <div class="movie"><img src="movie324.jpg" alt=""><p>The School for Good and Evil</p></div>
+                         <div class="movie"><img src="movie325.jpg" alt=""><p>Shehzada</p></div>
+                         <div class="movie"><img src="movie326.jpg" alt=""><p>The Fate of the Furious</p></div>
+                         <div class="movie"><img src="movie327.jpg" alt=""><p>Sir (Hindi)</p></div>
+                         <div class="movie"><img src="movie328.jpg" alt=""><p>Bangkok Breaking: Heaven and Hell</p></div>
+                         <div class="movie"><img src="movie329.jpg" alt=""><p>Gunjan Saxena: The Kargil Girl</p></div>
+                         <div class="movie"><img src="movie330.jpg" alt=""><p>Troll</p></div>
+                         <div class="movie"><img src="movie331.jpg" alt=""><p>Venom</p></div>
+                         <div class="movie"><img src="movie332.jpg" alt=""><p>Gemini Man</p></div>
+                         <div class="movie"><img src="movie333.jpg" alt=""><p>RRR (Hindi)</p></div>
+                         <div class="movie"><img src="movie334.jpg" alt=""><p>Man of Steel</p></div>
+                         <div class="movie"><img src="movie335.jpg" alt=""><p>Heart of Stone</p></div>
+                         <div class="movie"><img src="movie336.jpg" alt=""><p>The Mummy Returns</p></div>
+                         <div class="movie"><img src="movie337.jpg" alt=""><p>Godzilla: King of the Monsters</p></div>
+                         <div class="movie"><img src="movie338.jpg" alt=""><p>Codename: Tiranga</p></div>
+                         <div class="movie"><img src="movie339.jpg" alt=""><p>The Shawshank Redemption</p></div>
+                         <div class="movie"><img src="movie340.jpg" alt=""><p>The Shawshank Redemption</p></div>
+                        </div>
+                        <button class="next-btn" onclick="slideRight('Exciting Movies')">›</button>
+                    </div>
+                  </section>
+
+                  <section class="movie-row">
+                    <h6 id="header9">Family Movies</h6>
+                    <div class="movie-slider">
+                        <button class="prev-btn" onclick="slideLeft('Family Movies')">‹</button>
+                        <div class="movie-container" name="Family Movies">
+                            <div class="movie"><img src="movie341.jpg" alt=""><p>Gifted</p></div>
+                            <div class="movie"><img src="movie342.jpg" alt=""><p>Dora and the Lost City of Gold</p></div>
+                            <div class="movie"><img src="movie343.jpg" alt=""><p>Puss in Boots: The Last Wish</p></div>
+                            <div class="movie"><img src="movie344.jpg" alt=""><p>Sonic the Hedgehog</p></div>
+                            <div class="movie"><img src="movie345.jpg" alt=""><p>A.X.L.</p></div>
+                            <div class="movie"><img src="movie346.jpg" alt=""><p>Stuart Little 2</p></div>
+                            <div class="movie"><img src="movie347.jpg" alt=""><p>Skater Girl</p></div>
+                            <div class="movie"><img src="movie348.jpg" alt=""><p>Journey 2: The Mysterious Island</p></div>
+                            <div class="movie"><img src="movie349.jpg" alt=""><p>Peter Rabbit 2</p></div>
+                            <div class="movie"><img src="movie350.jpg" alt=""><p>Once Upon a Crimes</p></div>
+                            <div class="movie"><img src="movie351.jpg" alt=""><p>Wish Dragon</p></div>
+                            <div class="movie"><img src="movie352.jpg" alt=""><p>We Can Be Heroes</p></div>
+                            <div class="movie"><img src="movie353.jpg" alt=""><p>Chillar Party</p></div>
+                            <div class="movie"><img src="movie354.jpg" alt=""><p>How to Train Your Dragon 2</p></div>
+                            <div class="movie"><img src="movie355.jpg" alt=""><p>The Sea Beast</p></div>
+                            <div class="movie"><img src="movie356.jpg" alt=""><p>The Boss Baby: Get That Baby!</p></div>
+                            <div class="movie"><img src="movie357.jpg" alt=""><p>Shazam! Fury of the Gods</p></div>
+                            <div class="movie"><img src="movie358.jpg" alt=""><p>The Archies</p></div>
+                            <div class="movie"><img src="movie359.jpg" alt=""><p>Charlie and the Chocolate Factory</p></div>
+                            <div class="movie"><img src="movie360.jpg" alt=""><p>Slumberland</p></div>
+                        </div>
+                        <button class="next-btn" onclick="slideRight('Family Movies')">›</button>
+                    </div>
+                  </section>
+
+                  <section class="movie-row">
+                    <h6><span class="hoverable" onmouseover="showNewonNetflix()" onmouseout="hideNewonNetflix()"  id="header10">New on Netflix </span>
+                        <span id="more-texts" class="hidden">Explore more ></span></h6>
+                    <div class="movie-slider">
+                        <button class="prev-btn" onclick="slideLeft('New on Netflix')">‹</button>
+                        <div class="movie-container" name="New on Netflix">
+                            <div class="movie"><img src="movie361.jpg" alt=""><p>Saripodhaa Sanivaaram</p></div>
+                            <div class="movie"><img src="movie362.jpg" alt=""><p>The Final Destination</p></div>
+                            <div class="movie"><img src="movie363.jpg" alt=""><p>Final Destination 3</p></div>
+                            <div class="movie"><img src="movie364.jpg" alt=""><p>Final Destination 2</p></div>
+                            <div class="movie"><img src="movie365.jpg" alt=""><p>Rez Ball</p></div>
+                            <div class="movie"><img src="movie366.jpg" alt=""><p>Do You See What I See</p></div>
+                            <div class="movie"><img src="movie367.jpg" alt=""><p>Jailbreak: Love on the Run</p></div>
+                            <div class="movie"><img src="movie368.jpg" alt=""><p>An Invisible Victim: The Eliza Samudio Case</p></div>
+                            <div class="movie"><img src="movie369.jpg" alt=""><p>Divorce</p></div>
+                            <div class="movie"><img src="movie370.jpg" alt=""><p>A Thousand and One</p></div>
+                            <div class="movie"><img src="movie371.jpg" alt=""><p>A True Gentleman</p></div>
+                            <div class="movie"><img src="movie372.jpg" alt=""><p>Will & Harper</p></div>
+                            <div class="movie"><img src="movie373.jpg" alt=""><p>Mr. & Mrs. Mahi</p></div>
+                            <div class="movie"><img src="movie374.jpg" alt=""><p>Aay</p></div>
+                            <div class="movie"><img src="movie375.jpg" alt=""><p>Savi</p></div>
+                            <div class="movie"><img src="movie376.jpg" alt=""><p>Kingsman: The Golden Circle</p></div>
+                            <div class="movie"><img src="movie377.jpg" alt=""><p>Evil Dead Rise</p></div>
+                            <div class="movie"><img src="movie378.jpg" alt=""><p>Tillu Square</p></div>
+                            <div class="movie"><img src="movie379.jpg" alt=""><p>Ante Sundaraniki</p></div>
+                            <div class="movie"><img src="movie380.jpg" alt=""><p>Guntur Kaaram (Hindi)</p></div>   
+                        </div>
+                        <button class="next-btn" onclick="slideRight('New on Netflix')">›</button>
+                    </div>
+                  </section>
+
+                  <section class="movie-row">
+                    <h6  id="header11">Hollywood Movies</h6>
+                    <div class="movie-slider">
+                        <button class="prev-btn" onclick="slideLeft('Hollywood Movies')">‹</button>
+                        <div class="movie-container" name="Hollywood Movies">
+                            <div class="movie"><img src="movie381.jpg" alt=""><p>Bad Boys: Ride or Die</p></div>
+                            <div class="movie"><img src="movie382.jpg" alt=""><p>Fast & Furious Presents: Hobbs & Shaw</p></div>
+                            <div class="movie"><img src="movie383.jpg" alt=""><p>Rebel Ridge</p></div>
+                            <div class="movie"><img src="movie384.jpg" alt=""><p>Rampage</p></div>
+                            <div class="movie"><img src="movie385.jpg" alt=""><p>Madame Web</p></div>
+                            <div class="movie"><img src="movie386.jpg" alt=""><p>Fast X</p></div>
+                            <div class="movie"><img src="movie387.jpg" alt=""><p>Aquaman</p></div>
+                            <div class="movie"><img src="movie388.jpg" alt=""><p>The White Tiger</p></div>
+                            <div class="movie"><img src="movie389.jpg" alt=""><p>Uncharted</p></div>
+                            <div class="movie"><img src="movie390.jpg" alt=""><p>Gran Turismo: Based on a True Story</p></div>
+                            <div class="movie"><img src="movie391.jpg" alt=""><p>Black Adam</p></div>
+                            <div class="movie"><img src="movie392.jpg" alt=""><p>Leave the World Behind</p></div>
+                            <div class="movie"><img src="movie393.jpg" alt=""><p>The Equalizer 3</p></div>
+                            <div class="movie"><img src="movie394.jpg" alt=""><p>The Intern</p></div>
+                            <div class="movie"><img src="movie395.jpg" alt=""><p>The Shawshank Redemption</p></div>
+                            <div class="movie"><img src="movie396.jpg" alt=""><p>Damsel</p></div>
+                            <div class="movie"><img src="movie397.jpg" alt=""><p>Extraction 2</p></div>
+                            <div class="movie"><img src="movie398.jpg" alt=""><p>Rush Hour</p></div>
+                            <div class="movie"><img src="movie399.jpg" alt=""><p>Joker</p></div>
+                            <div class="movie"><img src="movie400.jpg" alt=""><p>Godzilla vs. Kong</p></div>   
+                        </div>
+                        <button class="next-btn" onclick="slideRight('Hollywood Movies')">›</button>
+                    </div>
+                  </section>
+
+                  <section class="movie-row">
+                    <div class="blurred-image">
+                    <h6  id="header12">Family Movies</h6>
+                    <div class="blur-container" name="Family Movies">
+                        <div class="movie"><img src="movie341.jpg" alt=""><p>Gifted</p></div>
+                        <div class="movie"><img src="movie342.jpg" alt=""><p>Dora and the Lost City of Gold</p></div>
+                        <div class="movie"><img src="movie343.jpg" alt=""><p>Puss in Boots: The Last Wish</p></div>
+                        <div class="movie"><img src="movie344.jpg" alt=""><p>Sonic the Hedgehog</p></div>
+                    </div>
+                  </section>
+         
+                  <section class="movie-row">
+                    <div class="blurred-image">
+                    <h6 id="header13">Tamil-Language Movies</h6>
+                    <div class="blur-container" name="Tamil-Language Movies">
+                        <div class="movie"><img src="movie41.jpg" alt=""><p>Khufiya</p></div>
+                        <div class="movie"><img src="movie42.jpg" alt=""><p>Phir Aayi Hasseen Dillruba</p></div>
+                        <div class="movie"><img src="movie43.jpg" alt=""><p>The Meg</p></div>
+                        <div class="movie"><img src="movie44.jpg" alt=""><p>Under Paris</p></div>
+                    </div>
+                </section>     
+
+    <!-- End of Movies -->
+
+    <!-- footer -->
+
+        <h2 id="footer1">There's even more to watch.</h2><br>
+        <h4 style="font-weight: 400;" id="footer2">Netflix has an extensive library of feature films, documentaries, TV <br>
+    shows, anime, award-winning Netflix originals and more. Watch as <br>
+    much as you want, anytime you want.</h4>
+
+    <div class="button">
+        <a href="Netflix Landing Page.html" class="join-now" id="join">Join now</a>
+        </div>
+
+<div class="footer-text">
+    <a href="#"><p id="footer3">Read about Netflix TV shows and movies and watch bonus videos on Tudum.com.</p></a>
+    <a href="#"><p id="footer4" style=" margin-top: 50px; position: relative;">Questions? Contact us.</p></a>
+    <div class="row">
+            <div class="col">
+                <a href="#"><p>FAQ</p></a>
+                <a href="#"><p id="Link1">Investor Relations</p></a>
+                <a href="#"><p id="Link2">Privacy</p></a>
+                <a href="#"><p id="Link3">Speed Test</p></a>
+            </div>
+
+            <div class="col">
+                <a href="#"><p id="Link4">Help Center</p></a>
+                <a href="#"><p id="Link5">Jobs</p></a>
+                <a href="#"><p id="Link6">Cookies Preferences</p></a>
+                <a href="#"><p id="Link7">Legal Notices</p></a>
+            </div>
+
+            <div class="col">
+                <a href="#"><p id="Link8">Account</p></a>
+                <a href="#"><p id="Link9">Ways to watch</p></a>
+                <a href="#"><p id="Link10">Corporate Information</p></a>
+                <a href="#"><p id="Link11">Only on Netflix</p></a>
+            </div>
+
+            <div class="col">
+                <a href="#"><p id="Link12">Media Centre</p></a>
+                <a href="#"><p id="Link13">Terms of Use</p></a>
+                <a href="#"><p id="Link14">Contact Us</p></a>
+            </div>
+
+        </div>
+</div>
+    <select class="fa select-language" id="language">
+        <option value="en"> &#xf0ac; &nbsp;&nbsp;&nbsp;English</option>
+        <option value="hi"> &#xf0ac; &nbsp;&nbsp;&nbsp;हिन्दी</option>
+    </select>
+</section>
+
+<!-- end of footer -->
+
+<!-- scrolling -->
+<script>
+ function slideLeft(elementName) {
+    const elements = document.getElementsByName(elementName);
+    if (elements.length > 0) {
+        const container = elements[0]; // Select the first matching element
+        container.scrollLeft -= container.clientWidth / 2; // for a smoother slide
+    }
+}
+
+function slideRight(elementName) {
+    const elements = document.getElementsByName(elementName);
+    if (elements.length > 0) {
+        const container = elements[0]; // Select the first matching element
+        container.scrollLeft += container.clientWidth / 2; //for a smoother slide
+    }
+}
+// scrolling
+
+// explore more
+    function showYourNextwatch() {
+        document.getElementById('more-text').classList.remove('hidden'); // Show the text
+    }
+
+    function hideYourNextwatch  () {
+        document.getElementById('more-text').classList.add('hidden'); 
+    }
+
+    function showNewonNetflix() {
+        document.getElementById('more-texts').classList.remove('hidden'); // Show the text
+    }
+
+    function hideNewonNetflix() {
+        document.getElementById('more-texts').classList.add('hidden'); // Hide the text
+    }
+// explore more
+
+    document.getElementById('language').addEventListener('change', function() {
+            changeLanguage(this.value) ;
+        });
+        function changeLanguage(lang) {
+            const texts = {
+                en: {
+                   headerline:"UNLIMITED TV SHOWS & MOVIES",
+                   joinnow: "Join now",
+                   signin: "Sign In",
+                   herotext: "Movies",
+                    paragraph: "Movies move us like nothing else can, whether they’re scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience.",
+                    moretext: "Explore more >",
+                    moretexts: "Explore more >",
+                    header1: "Your Next watch",
+                    header2: "Comedy Movies",
+                    header3: "Suspenseful Movies",
+                    header4: "Movies Based on Real Life",
+                    header5: "Horror Movies",
+                    header6: "Futuristic Sci-Fi",
+                    header7: "Tamil-Language Movies",
+                    header8: "Exciting Movies",
+                    header9: "Family Movies",
+                    header10: "New on Netflix",
+                    header11: "Hollywood Movies",
+                    header12: "Family Movies",
+                    header13: "Tamil-Language Movies",
+                    footer1: "There's even more to watch.",
+                    footer2: "Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals and more. Watch as much as you want, anytime you want.",
+                    join: "Join now",
+                    footer3: "Read about Netflix TV shows and movies and watch bonus videos on Tudum.com.",
+                    footer4: "Questions? Contact us.",
+                    Link1: "Investor Relations",
+                    Link2: "Privacy",
+                    Link3: "Speed Test",
+                    Link4: "Help Center",
+                    Link5: "Jobs",
+                    Link6: "Cookies Preferences",
+                    Link7: "Legal Notices",
+                    Link8: "Account",
+                    Link9: "Ways to watch",
+                    Link10: "Corporate Information",
+                    Link11: "Only on Netflix",
+                    Link12: "Media Centre",
+                    Link13: "Terms of Use",
+                    Link14: "Contact Us",
+     
+                },
+                hi: {
+                    headerline: "असीमित टीवी शो और फिल्में",
+                    joinnow: "अब शामिल हों",
+                    signin: "दाखिल करना",
+                    herotext: "चलचित्र",
+                    paragraph: "फ़िल्में हमें इस तरह प्रभावित करती हैं जैसे कोई और नहीं कर सकता, चाहे वे डरावनी हों, मज़ेदार हों, नाटकीय हों, रोमांटिक हों या बीच में कहीं भी हों। इतने सारे शीर्षक, अनुभव करने के लिए बहुत कुछ।",
+                    moretext: "और अधिक खोजें >",
+                    moretexts: "और अधिक खोजें >",
+                    header1: "आपकी अगली घड़ी",
+                    header2: "हास्य फिल्में",
+                    header3: "सस्पेंसफुल फिल्में",
+                    header4: "वास्तविक जीवन पर आधारित फिल्में",
+                    header5: "डरावनी फिल्में",
+                    header6: "भविष्यवादी विज्ञान कथा",
+                    header7: "तमिल भाषा की फिल्में",
+                    header8: "रोमांचक फिल्में",
+                    header9: "पारिवारिक फिल्में",
+                    header10: "नेटफ्लिक्स पर नया",
+                    header11: "हॉलीवुड फिल्में",
+                    header12: "पारिवारिक फिल्में",
+                    header13: "तमिल भाषा की फिल्में",
+                    footer1: "देखने के लिए और भी बहुत कुछ है।",
+                    footer2: "नेटफ्लिक्स के पास फीचर फिल्मों, वृत्तचित्रों, टीवी शो, एनीमे, पुरस्कार विजेता नेटफ्लिक्स मूल और बहुत कुछ की एक विस्तृत लाइब्रेरी है। जितना चाहो, जब चाहो देखो।",
+                    join: "अब शामिल हों",
+                    footer3: "नेटफ्लिक्स टीवी शो और फिल्मों के बारे में पढ़ें और Tudum.com पर बोनस वीडियो देखें।",
+                    footer4: "प्रश्न? हमसे संपर्क करें.",
+                    Link2: "गोपनीयता",
+                    Link3: "स्पीड पोस्ट",
+                    Link4: "सहायता केंद्र",
+                    Link5: "नौकरियाँ",
+                    Link6: "कुकीज़ प्राथमिकताएँ",
+                    Link7: "कानूनी नोटिस",
+                    Link8: "खाता",
+                    Link9: "देखने के तरीके",
+                    Link10: "कॉर्पोरेट जानकारी",
+                    Link11: "केवल नेटफ्लिक्स पर",
+                    Link12: "मीडिया केंद्र",
+                    Link13: "उपयोग की शर्तें",
+                    Link14: "हमसे संपर्क करें",
+
+                }
+            };
+
+            const selectedTexts = texts[lang];
+            document.getElementById('header line').textContent = selectedTexts.headerline;
+            document.getElementById('join now').textContent = selectedTexts.joinnow;
+            document.getElementById('sign in').textContent = selectedTexts.signin;
+            document.getElementById('hero text').textContent = selectedTexts.herotext;
+            document.getElementById('paragraph').textContent = selectedTexts.paragraph;
+            document.getElementById('more-text').textContent = selectedTexts.moretext;
+            document.getElementById('more-texts').textContent = selectedTexts.moretexts;
+            document.getElementById('header1').textContent = selectedTexts.header1;
+            document.getElementById('header2').textContent = selectedTexts.header2;
+            document.getElementById('header3').textContent = selectedTexts.header3;
+            document.getElementById('header4').textContent = selectedTexts.header4;
+            document.getElementById('header5').textContent = selectedTexts.header5;
+            document.getElementById('header6').textContent = selectedTexts.header6;
+            document.getElementById('header7').textContent = selectedTexts.header7;
+            document.getElementById('header8').textContent = selectedTexts.header8;
+            document.getElementById('header9').textContent = selectedTexts.header9;
+            document.getElementById('header10').textContent = selectedTexts.header10;
+            document.getElementById('header11').textContent = selectedTexts.header11;
+            document.getElementById('header12').textContent = selectedTexts.header12;
+            document.getElementById('header13').textContent = selectedTexts.header13;
+            document.getElementById('footer1').textContent = selectedTexts.footer1;
+            document.getElementById('footer2').textContent = selectedTexts.footer2;
+            document.getElementById('join').textContent = selectedTexts.join;
+            document.getElementById('footer3').textContent = selectedTexts.footer3;
+            document.getElementById('footer4').textContent = selectedTexts.footer4;
+            document.getElementById('Link1').textContent = selectedTexts.Link1;
+            document.getElementById('Link2').textContent = selectedTexts.Link2;
+            document.getElementById('Link3').textContent = selectedTexts.Link3;
+            document.getElementById('Link4').textContent = selectedTexts.Link4;
+            document.getElementById('Link5').textContent = selectedTexts.Link5;
+            document.getElementById('Link6').textContent = selectedTexts.Link6;
+            document.getElementById('Link7').textContent = selectedTexts.Link7;
+            document.getElementById('Link8').textContent = selectedTexts.Link8;
+            document.getElementById('Link9').textContent = selectedTexts.Link9;
+            document.getElementById('Link10').textContent = selectedTexts.Link10;
+            document.getElementById('Link11').textContent = selectedTexts.Link11;
+            document.getElementById('Link12').textContent = selectedTexts.Link12;
+            document.getElementById('Link13').textContent = selectedTexts.Link13;
+            document.getElementById('Link14').textContent = selectedTexts.Link14;
+        }
+   
+</script>
+
+    </body>
+    </html>

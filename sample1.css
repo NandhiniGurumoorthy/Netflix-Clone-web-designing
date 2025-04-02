@@ -1,0 +1,35 @@
+body{
+    background-color: yellow;
+}
+
+
+h2{
+    color: brown;
+    text-align: center;
+}
+.one{
+    color:rgb(255, 0, 170);
+    text-align: right;
+}
+.two{
+    color:blue;
+    text-align:right
+}
+.three{
+    color:blue;
+    text-align:right
+}
+.four{
+    color:blue;
+    text-align:right
+}
+.five{
+    color:blue;
+    text-align:right
+}
+#one{
+color:chartreuse;
+}
+#two{
+color:chocolate;
+}

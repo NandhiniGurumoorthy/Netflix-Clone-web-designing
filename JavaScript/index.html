@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+    <script src="JSfile.js"></script>
+
+    <style>
+        /* General body styling */
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Style for the form containers */
+        /* .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        } */
+
+        /* Label and input styling */
+        /* label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: block;
+            text-align: left;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #45a049;
+        } */ 
+
+        /* Error message styling */
+        /* .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        } */
+
+        /* Styling for the clickable heading */
+        /* h1 {
+            cursor: pointer;
+            color: #007BFF;
+        }
+
+        h1:hover {
+            text-decoration: underline;
+        } */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+   
+</head>
+<body>
+    <!-- <h2 id="dt"></h2>
+    <button type="button" onclick="document.getElementById('dt').innerHTML=Date()">clickme</button>
+     -->
+<!-- //FORM CREATION AND POP MESSAGE -->
+     <!-- <center>
+        <div class="style">
+            <form name="loginform" method="post" onsubmit="return validateform()">
+                <label >UserName:</label>
+                <input type="text" name="username" id=""><br>
+                <label >Password:</label>
+                <input type="text" name="pass" id=""><br>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </center> -->
+
+    <!-- //CALCULATOR -->
+    <!-- <center>
+        <p>Enter the First Number:
+            <input type="text" id="first">
+        </p>
+        <br>
+        <p>Enter the Second Number:
+            <input type="text" id="second">
+        </p>
+        <br>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+        <br><br>
+        <p>Result:
+            <input type="text" id="answer">
+        </p>
+    </center> -->
+    
+   <!-- //FORM PASSWORD (MISMATCH) -->
+      <!-- <h2>Password Mismatch</h2>
+      <form action="#" name="pc" method="post" onsubmit="passConfirm()">
+        <label>Password:</label><br>
+        <input type="text" name="pass"><br>
+        <br>
+   
+        <label>Confirm Password:</label><br>
+        <input type="text" name="cpass"><br>
+        <input type="submit" value="login">
+    </form> -->
+
+
+   <!-- //SMALL TO UPEERCASE (PAN) -->
+   <!-- <h1>Uppercase inputs only</h1>
+   <label for="">Enter a input as text</label>
+   <input type="text" id="textAs" onchange="upCase()">
+
+   <p>After the input is entered, it will automatically converted as uppercase</p>   -->
+
+   <!-- //QUICK CHANGE -->
+    <!-- <h1 onclick="quickChange(this)">Click on this word!!!</h1>  -->
+
+    <!-- <h2>DOM Elelements</h2>
+    <p id="message">Click the button change this text</p>
+    <button onclick="changeText()">Clik Me</button>
+
+    <script>
+        function changeText(){
+            let messageElement = document.getElementById("message");
+            messageElement.innerHTML="The text has been changed!";
+            messageElement.style.color="blue";
+        }
+    </script>
+
+<button onclick="changeBackgroundColor()">change background</button>
+<script>
+    function changeBackgroundColor(){
+        document.body.style.backgroundColor="lightblue";
+    }
+</script> -->
+
+<!-- <p class="hideandseek">This text can be hidden or shown</p>
+<button onclick="toogleVisi()">Toggle Visibility</button>
+
+<script>
+    function toogleVisi() {
+        let elements = document.getElementsByClassName("hideandseek");
+        for(let i=0; i<elements.length; i++){
+        // Check if the first element is visible or hidden
+        if(elements[i].style.display==="none"){
+            //if hidden , display it
+            elements[i].style.display="block";
+        }
+            else{
+                //if visible , hide it
+                elements[i].style.display="none";
+            }
+        }
+    }
+</script> -->
+
+
+</body>
+</html>

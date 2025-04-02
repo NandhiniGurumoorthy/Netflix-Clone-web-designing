@@ -1,0 +1,13 @@
+h1{
+    color:red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    background-color: pink;
+    border-radius: 3px;
+    width: 50px;
+    padding: 10px 10px ;
+    margin-left: 200px;
+    position: relative;
+}

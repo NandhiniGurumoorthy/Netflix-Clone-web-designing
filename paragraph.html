@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position</title>
+    <style>
+ 
+[class *='box-']{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.box-1{
+    position: fixed;
+    top: 10px;
+    width: 300px;
+    height: 100px;
+}
+.box-2{
+    border-style: dotted;
+    padding: 5px;
+}
+.outer-box{
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+}
+ .text-content {
+    margin: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo beatae cupiditate hic. Hic tenetur, obcaecati molestias reprehenderit nulla, animi ipsam aspernatur voluptatem nostrum, enim et dolorum iure facilis exercitationem! Placeat architecto iusto, ipsam est voluptate reiciendis necessitatibus qui sed laborum distinctio ducimus quod nulla alias ipsum quasi obcaecati consectetur quas perspiciatis? Illum et esse quam possimus officia totam pariatur ab cupiditate. Nesciunt ipsum dicta animi temporibus magnam saepe necessitatibus, rem quasi nemo deserunt earum fuga, quo similique perferendis. Minus dignissimos hic magnam ipsum earum adipisci amet ad explicabo, iusto recusandae consectetur sapiente omnis ratione molestiae eveniet sequi, assumenda repellendus commodi ducimus, sunt iste voluptas repellat! Iure, perspiciatis. Porro vero aspernatur quibusdam libero fugiat alias, expedita quaerat voluptas consequuntur reprehenderit rerum dolor. Ipsam, dolore? Cum magnam in laboriosam, porro earum non ea blanditiis et obcaecati sequi accusantium veniam ipsa odio ut sapiente debitis. Reiciendis placeat rem minus commodi obcaecati nihil accusamus porro ipsam ratione. Quo quam enim fugit, corrupti, id sunt omnis tempora dolorum numquam adipisci rerum eum accusantium eligendi molestias asperiores nemo similique debitis repudiandae ducimus labore nobis, veritatis voluptatem ratione excepturi. Voluptates laudantium reprehenderit voluptatem necessitatibus error, eius blanditiis non ullam illum alias rerum, tenetur deserunt dolores, quasi exercitationem.</p>
+        </div>
+        <div class="box-1">
+            This div has &ensp;
+            <div class="box-2">position : fixed;</div>
+        </div>
+    </div>
+</body>
+</html>

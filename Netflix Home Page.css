@@ -1,0 +1,180 @@
+
+:root {
+  background-color: rgb(7, 7, 7);
+} 
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+} 
+
+/* HEADER */
+
+img {
+  max-width: 100%;
+}
+
+.netflixLogo {
+  /* grid-area: nt; */
+  /* object-fit: cover; */
+  width: 150px;
+  /* max-height: 100%; */
+  padding-left: 5px;
+  /* padding-top: 0px;   */
+}
+
+.netflixLogo img {  
+  height: 40px;     
+}
+
+#logo {
+  margin: 10PX; 
+  position: relative;
+  bottom: 2PX; 
+}
+
+header {
+  padding: 50px 20px 0 20px;
+  position: fixed;
+  top: 0;
+  display: grid;  
+  grid-gap:5px;
+  grid-template-columns: 1fr 4fr 1fr;
+  /* grid-template-areas: 
+  "nt mn mn sb . . . ";  */
+  background-color: rgb(10, 10, 10);
+  width: 100%;
+  /* border-bottom: 3px solid rgb(80, 66, 66); */
+   
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;  
+  cursor:pointer;
+  font-size: larger;
+  /* position: relative;
+  top: 20PX; 
+  right: 50px; */
+}
+
+.main-nav a:hover {
+  color: gray;
+}
+
+.main-nav {
+  /* grid-area: mn; */
+  padding: 10 30px 0 200px;
+}
+
+.sub-nav {
+  /* grid-area: sb; */
+  font-size: larger;
+  position: relative;
+  bottom: 0px; 
+}
+
+.sub-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.sub-nav a:hover {
+  color: goldenrod;
+}
+
+/* END OF HEADER */
+
+
+/* MAIN CONTAINER */
+h1 {
+  padding-top: 60px;  
+}
+
+.main-container {
+  padding: 50px;
+  background-image: url('');
+  background-size:contain;
+  background-color: rgb(7, 7, 7);
+  color: white;
+
+}
+
+.box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, minmax(150px, 1fr));
+}
+
+.box a {
+  transition: transform .3s;  
+}
+
+.box a:hover {
+  /* transition: transform .3s; */
+  /* -ms-transform: scale(1.4); */
+  /* -webkit-transform: scale(1.4);   */
+  transform: scale(1.4);
+}
+
+.box img {
+  border-radius: 2px;
+}
+
+/* END OF MAIN CONTAINER */
+
+/* LINKS */
+
+.link {
+  padding: 50px;
+}
+
+.logo {
+  color: gray;
+  margin-right: 20px;
+  
+}
+
+.logo li :hover{
+  cursor: pointer;
+}
+
+.sub-links ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 5%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.sub-links a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+/* END OF LINKS */
+
+/* FOOTER */
+
+footer {
+  margin-left: 40%;
+  color: white;
+}
+ 
+/* END OF FOOTER */
+
+
+
+
+  
+
+ 
+

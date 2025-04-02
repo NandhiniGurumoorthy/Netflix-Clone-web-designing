@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #liveTime {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+    // alert("Hello")
+    //     var area,length,breadth;
+    //     length=10;
+    //     breadth=90;
+    //     area=length*breadth;
+    //     document.write(area);
+        
+    //     var area,length,breadth;
+    //     length=10;
+    //     breadth=90;
+    //     area=length*breadth;
+    //     console.log(area);
+
+    //    var area,length,breadth;
+    //     length=10;
+    //     breadth=90;
+    //     area=length*breadth;
+    //     document.write("area of rectangle",area);
+
+    //     var area,length,breadth;
+    //     length=prompt("enter a length");
+    //     breadth=prompt("enter a breadth");
+    //     area=length*breadth;
+    //     document.write("area of rectangle",area);
+    //     confirm("do you want to continue?")
+        
+    //     var area,length,breadth;
+    //     length=parseInt(prompt("enter a length"));
+    //     breadth=parseInt(prompt("enter a breadth"));
+    //     area=length+breadth;
+    //     document.write("area of rectangle"+area);
+    //     confirm("do you want to continue?")
+
+    //     a=prompt("enter the password")
+    //     if(a=="123")
+    // {
+    //     document.write("home")
+    // }
+    // else
+    // {
+    //     document.write("retry")
+    // }
+
+    // a=prompt("eligible for broadcasting")
+    // if(a==18)
+    // {
+    //     document.write("eligible")
+    // }
+    // else
+    // {
+    //     document.write("not eligible")
+    // }
+
+//     a=prompt("check odd or even")
+// if (a=a%2==0){
+//     document.write("even")
+// }
+// else
+// {
+//     document.write("odd")
+// }
+
+// gmail=prompt("Enter the gmail")
+// if(gmail=="abc@gmail.com")
+// {
+//     psd=prompt("enter the password")
+//     if(psd=="abc")
+// {
+//     document.write("home")
+// }
+// }
+// elase
+// {
+//     document.write("invalid mail id")
+// }
+
+// ab=parseInt(prompt("Enter A no"))
+// bc=parseInt(prompt("Enter B no"))
+// ca=parseInt(prompt("Enter C no"))
+// if(ab==bc && bc==ca && ca==ab)
+// {
+//     document.write("Equilateral triangle")
+// }
+// else if(ab==bc || bc==ca || ca==ab)
+// {
+//     document.write("Isolesces Triangle")
+// }
+// else
+// {
+//     document.write("Scalene Triangle")
+// }
+
+// a=parseInt(prompt("Enter X number"))
+// b=parseInt(prompt("Enter Y number"))
+// if (x > 0 && y > 0)
+// {
+//     document.write("Quadrent 1")
+// }
+// else if(x < 0 && y > 0)
+// {
+//     document.write("Quaderent 2")
+// }
+// else if(x < 0 && y < 0)
+// {
+//     document.write("Quaderent 3")
+// }
+// else 
+// {
+//     document.write("Quaderent 4")
+// }
+
+// a=parseInt(prompt("Enter X number"))
+// b=parseInt(prompt("Enter Y number"))
+// if (x>0)
+// {
+//     if(y>0)
+// {
+//     document.write("1st quaderent")
+// }
+// else
+// {
+//     document.write("4th quadrent")
+// }
+// }
+// else if (y>0)
+// {
+//     document.write("2nd quaderent")
+// }
+// else
+// {
+//     document.write("3rd quaderent")
+// }
+
+// x=parseInt(prompt("enter x"))
+// y=parseInt(prompt("enter y"))
+// z=prompt("enter the choice")
+// switch(z)
+// {
+//     case "add":
+//     a=x+y
+//  break
+//     case "-":
+//     a=x-y
+// break
+//     case "*":
+//     a=x*y
+// break
+//    default:
+//    document.write("invalid")
+// }
+//     document.write(a)
+
+// a=1
+// while(a<11)
+// {
+//     document.write(a+"<br>")
+//     a++
+// }
+
+// a=1
+// while(a<6)
+// {
+//     b=prompt("enter the password")
+//     if(b=="123")
+// {
+//     console.log("home")
+//     break
+// }
+// else
+// {
+//     console.log("retry")
+// }
+// a++
+// }
+// document.write("wait for 15 sec")
+
+// NESTED FOR
+
+// for(i=1; i<6; i++)
+// {  
+// for(j=1; j<6; j++)
+// {
+// document.write(j*i)  
+// }  
+// document.write("<br>")
+// }
+ 
+// for(i=1; i<6; i--)
+// {  
+// for(j=1; j<i-1; j--)
+// {
+// document.write("*")  
+// }  
+// document.write("<br>")
+// }
+
+// Decreasing Left Triangle
+
+// for(i=5; i>0; i--){
+//     for(j=0; j<i; j++){
+//         document.write("*")
+//     }
+//     document.write("<br>")
+// }
+
+// // Left Increasing Triangle
+
+// for(i=1; i<=5; i++){
+//     for(j=1; j<=i; j++){
+//     document.write("*")
+//     }
+//     document.write("<br>")
+// }
+
+// for (let i = 1; i <= 5; i++) {
+//     for (let space = 1; space <= 5 - i; space++) {
+//     document.write("&nbsp&nbsp")
+//    }
+//    for (let k = 1; k <= i; k++) {
+//     document.write("*")
+//    }
+//    document.write("<br>")
+// }
+
+ 
+// for (i = 1; i <= 5; i++) { 
+//     document.write("*") 
+//     document.write("&nbsp")
+//     console.log(space.repeat((5 - i)) + str.repeat(i * 2 - 1)); 
+// } 
+// for (let i =5 - 1; i >= 1; i--) { 
+//     document.write("*") 
+//     document.write("&nbsp")
+//     console.log(space.repeat((5 - i)) + str.repeat(i * 2 - 1)); 
+// }
+
+// right angle triangle with the number increased by 1
+
+// var rows, i, j, num = 1;
+// for (i = 1; i <= 4; i++) {
+// for (j = 1; j <= i; j++)
+// document.write(num++);
+// document.write('<br/>');
+// }
+
+// Dimond
+
+// let n = 5; 
+// for (let i = 1; i <= n; i++) { 
+//     let str = "*"; 
+//     let space = ' '; 
+//     ducument.write(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+// } 
+// for (let i = n - 1; i >= 1; i--) { 
+//     let str = "*"; 
+//     let space = ' '; 
+//     document.write(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+// }
+
+// Functions
+
+// with argument without return value
+
+// function sum(a,b)
+// {
+//     c=a+b
+//     document.write(c)
+// }
+
+// function sum(a,b)
+// {
+//     c=a+b
+//     document.write(c)
+// }
+// sum(10,20)
+
+// // with argument with return value
+
+// function sum(a,b)
+// {
+//     c=a+b
+//     return c
+// }
+// document.write("sum of two number is", sum(10,20),"<br>")
+// document.write("addition of two number is", sum(10,20),"<br>")
+
+// // without argument without return value
+
+// function sum(a,b){
+//     a=10
+//     b=20
+//     c=a+b
+//     return c
+// }
+// document.write("sum of two number is", sum())
+
+// function sum(a,b){
+//     a=10
+//     b=20
+//     c=a+b
+//     alert(c)
+// }
+// sum()
+
+// Recursive function
+
+//  factorial example
+
+// function fact(a){
+//     if(a==1)
+// {
+//     return 1
+// }
+// else{
+//     return a*fact(a-1)
+// }
+// }
+// document.write (fact(5))
+
+// power example
+
+//  function pow(a,b){
+//     if (b==0)
+//  {
+//     return 1
+//  }
+//  else if(b==1)
+//  {
+//     return a
+//  }
+//  else
+//  {
+//     return a*pow(a,b-1)
+//  }
+//  }
+//  document.write(pow(3,2))
+
+// fibonacci series example
+// function fibo(a){
+//     if (a<=1){
+//         return a
+//     }
+//     else{
+//         return fibo(a-1)+fibo(a-2)
+//     }
+// }
+// a=10
+// for(i=0; i<a; i++){
+//     document.write(fibo(i)+"<br>")
+//  }
+
+// prime number or not
+
+// function isPrime(num) {
+//     if (num <= 1) return false; 
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             return false; 
+//         }
+//     }
+//     return true; 
+// }
+
+// anonymous function
+
+// (function(){
+    
+//     document.write("hlo")
+// }
+// )
+// ();
+
+// var a=()=>{
+//     document.write("welcome")
+// }
+// a()
+
+// const userInput = 91;
+// document.write('Is a prime number?', isPrime(userInput));
+
+// FUNTION TO GET OK and CANCEL 
+// function getconfirm(){
+//     var a=confirm("Do you want to continue")
+//     if(a==true)
+// {
+//     document.write("User chose to continue.");
+//     return true
+// }
+//   else{
+//     document.write("User chose not to continue.");
+//     return false
+//   }
+// } 
+
+//  how to print name on prompt box
+// function printvalue()
+//     {
+//         var a=document.form1.name1.value
+//         alert("welcome " + a)
+//     }
+
+// live time displayLiveDateTime
+// function displayLiveDateTime() {
+//     const now = new Date(); 
+
+    
+//     const date = now.toLocaleDateString(); 
+//     const time = now.toLocaleTimeString(); 
+
+    
+//     document.getElementById('liveTime').innerText = `Current Local Date: ${date}, Current Local Time: ${time}`;
+// }
+
+// setInterval(displayLiveDateTime);
+
+// displayLiveDateTime();
+
+// another method
+        // window.onload = function() {
+        //     getTime();
+            
+        // }
+
+        // function getTime() {
+        //     var today = new Date(); 
+        //     var b = today.getDate();
+        //     var c = today.getMonth() + 1; 
+        //     var d = today.getFullYear();
+        //     var h = today.getHours();
+        //     var m = today.getMinutes();
+        //     var s = today.getSeconds(); 
+
+           
+        //     h = checkTime(h);
+        //     m = checkTime(m);
+        //     s = checkTime(s);
+        //     b = checkTime(b); 
+        //     c = checkTime(c); 
+        //     d = checkTime(d);
+
+            
+        //     document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+        //     document.getElementById('txt1').innerHTML = b + "/" + c + "/" + d; 
+        //     setInterval(getTime, 1000); 
+        // }
+
+        // function checkTime(i) {
+        //     if (i < 10) {
+        //         i = "0" + i;
+        //     }
+        //     return i;
+        // }
+// onsubmit        
+// function a()
+// {
+//     alert("form has submitted successfylly")
+// }
+    // function a()
+    // {
+    //     var s=document.getElementsByTagName("p")
+    //     alert("total pragraph is "+s.length)
+    // }
+
+// a=["blue","black","red"]
+// a.forEach(value1)
+// function value1(ab)
+// {
+//   document.write("fav color "+ab+"<br>")
+// }
+    
+// a=[1,2,3]
+// a.forEach(value1)
+// function value1(ab)
+// {
+//   document.write("fav color "+ab+"<br>")
+// }
+
+// var a = new Promise(function(okay,reject) {
+    
+//     var a =Math.floor(Math.random()*2);
+    
+//     if (a==0) 
+//     {
+//         okay(); 
+//     } else 
+//     {
+//         reject(); 
+//     }
+// });
+
+// a.then(head).catch(tail)
+// function head()
+// {
+//     document.write("head")
+// }
+// function tail()
+// {
+//     document.write("tail")
+// }
+
+// fetch('https://catfact.ninja/fact')
+//         .then(res => console.log(res.json()))
+//         .catch(error => console.log(error))
+
+//         fetch('https://catfact.ninja/fact')
+//         .then(res => res.json()).then((data) => {console.log(data.fact)})
+//         .catch(error => console.log(error))
+         
+
+// fetch('https://api.adviceslip.com/advice')
+//         .then(res => console.log(res.json()))
+//         .catch(error => console.log(error))
+
+//    fetch('https://api.adviceslip.com/advice')
+//    .then(res => res.json()).then((data) => {console.log(data.slip.advice)})
+//    .catch(error => console.log(error))      
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<!-- <input type="sumbit" value="add" onclick="sum(10,20)"> -->
+
+<!-- FUNTION TO GET OK and CANCEL  -->
+<!-- <input type="button" value="click me" onclick="getconfirm()"> -->
+
+<!-- <form name="form1">
+    Enter name:<input type="text" name="name1" id="">
+    <br>
+    <input type="button" value="clickme" onclick="printvalue()">
+</form> -->
+<!-- <div id="liveTime"></div> -->
+<!-- <span id="txt"></span>
+<span id="txt1"></span> -->
+ 
+<!-- <p>First paragraph.</p>
+<p>Second paragraph.</p>
+<p>Third paragraph.</p>
+<form onsubmit="a()">
+<input type="submit" value="submit">
+</form> -->
+
+<!-- creating elements 1 -->
+  <!-- <script>
+    var a=document.createElement('button')
+    a.innerHTML="clickme"
+    document.body.appendChild(a)
+  </script> -->
+
+<!-- <ul id="one">
+    <li>black</li>
+    <li>white</li>
+    <li>red</li>
+</ul>
+<button onclick="a()">delete</button>
+
+<script>
+    function a()
+    {
+        var l=document.getElementById('one');
+        l.removechild(l.firstElementChild)
+    }
+</script> -->
+
+
+<!-- <ul id="one1">
+    <li>black</li>
+    <li>white</li>
+    <li>red</li>
+</ul>
+<button onclick="b()">add</button>
+<script>
+    function b(){
+        var a=document.getElementById('one1');
+        var b=document.createElement('li')
+b.textContent="green"
+a.insertBefore(b,a.firstElementChild)
+        
+    }
+</script> -->
+
+<!-- <ul id="one2"></ul>
+    <li>black</li>
+    <li>white</li>
+    <li>red</li>
+</ul>
+<button onclick="c()">add</button>
+<script>
+    function c()
+    {
+        var a=document.getElementById('one2');
+        var b=document.createElement('li')
+        b.textContent="yellow"
+        a.insertBefore(b,a. children[1])
+    }
+</script> -->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
